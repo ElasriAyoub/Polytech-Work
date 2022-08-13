@@ -1,0 +1,362 @@
+[
+	{
+		"nom": "September Richmond",
+		"numero": "859499",
+		"score": "81.7",
+		"region": 2
+	},
+	{
+		"nom": "Armand Juarez",
+		"numero": "380699",
+		"score": "76.3",
+		"region": 5
+	},
+	{
+		"nom": "Dustin Alexander",
+		"numero": "89199",
+		"score": "75.8",
+		"region": 4
+	},
+	{
+		"nom": "Chadwick Washington",
+		"numero": "782999",
+		"score": "84.1",
+		"region": 2
+	},
+	{
+		"nom": "Meredith Camacho",
+		"numero": "14199",
+		"score": "79.6",
+		"region": 4
+	},
+	{
+		"nom": "Nehru Macdonald",
+		"numero": "43299",
+		"score": "75.3",
+		"region": 2
+	},
+	{
+		"nom": "Ahmed Savage",
+		"numero": "446499",
+		"score": "84.4",
+		"region": 1
+	},
+	{
+		"nom": "Merritt Peterson",
+		"numero": "1870799",
+		"score": "77.2",
+		"region": 2
+	},
+	{
+		"nom": "Joy Cole",
+		"numero": "07399",
+		"score": "88.2",
+		"region": 4
+	},
+	{
+		"nom": "Ursula Bolton",
+		"numero": "67899",
+		"score": "76",
+		"region": 4
+	},
+	{
+		"nom": "Forrest Thompson",
+		"numero": "02099",
+		"score": "84.4",
+		"region": 3
+	},
+	{
+		"nom": "Buffy Gilliam",
+		"numero": "96099",
+		"score": "75.8",
+		"region": 3
+	},
+	{
+		"nom": "Ignatius Morse",
+		"numero": "53399",
+		"score": "83.6",
+		"region": 4
+	},
+	{
+		"nom": "Chancellor Ewing",
+		"numero": "070999",
+		"score": "72.8",
+		"region": 5
+	},
+	{
+		"nom": "Constance Hatfield",
+		"numero": "165999",
+		"score": "88",
+		"region": 5
+	},
+	{
+		"nom": "Kane Serrano",
+		"numero": "439699",
+		"score": "86.1",
+		"region": 1
+	},
+	{
+		"nom": "Echo Holmes",
+		"numero": "431299",
+		"score": "86.7",
+		"region": 1
+	},
+	{
+		"nom": "Caryn Wilcox",
+		"numero": "2438499",
+		"score": "74.4",
+		"region": 3
+	},
+	{
+		"nom": "Iliana May",
+		"numero": "808299",
+		"score": "88.6",
+		"region": 3
+	},
+	{
+		"nom": "Eaton Nieves",
+		"numero": "0776099",
+		"score": "87",
+		"region": 2
+	},
+	{
+		"nom": "Isabella Knowles",
+		"numero": "2897499",
+		"score": "83",
+		"region": 3
+	},
+	{
+		"nom": "Emerson Byrd",
+		"numero": "1244999",
+		"score": "71.8",
+		"region": 5
+	},
+	{
+		"nom": "Gloria Suarez",
+		"numero": "287399",
+		"score": "76.4",
+		"region": 4
+	},
+	{
+		"nom": "Chelsea Mckay",
+		"numero": "490799",
+		"score": "81.7",
+		"region": 1
+	},
+	{
+		"nom": "Christen Lawrence",
+		"numero": "50299",
+		"score": "70.7",
+		"region": 1
+	},
+	{
+		"nom": "Omar Harper",
+		"numero": "45699",
+		"score": "81.5",
+		"region": 5
+	},
+	{
+		"nom": "Erica Hobbs",
+		"numero": "06599",
+		"score": "80",
+		"region": 4
+	},
+	{
+		"nom": "Dakota Rhodes",
+		"numero": "105199",
+		"score": "84.6",
+		"region": 2
+	},
+	{
+		"nom": "Ezekiel Ryan",
+		"numero": "139199",
+		"score": "74.6",
+		"region": 5
+	},
+	{
+		"nom": "Yoshio Rogers",
+		"numero": "471999",
+		"score": "73.7",
+		"region": 4
+	},
+	{
+		"nom": "Sonia Delgado",
+		"numero": "192599",
+		"score": "87.1",
+		"region": 1
+	},
+	{
+		"nom": "Rowan Hancock",
+		"numero": "292899",
+		"score": "78",
+		"region": 5
+	},
+	{
+		"nom": "Sebastian Keller",
+		"numero": "800699",
+		"score": "74.3",
+		"region": 4
+	},
+	{
+		"nom": "Debra Avery",
+		"numero": "826099",
+		"score": "76.6",
+		"region": 1
+	},
+	{
+		"nom": "Reed Murphy",
+		"numero": "30299",
+		"score": "75.5",
+		"region": 3
+	},
+	{
+		"nom": "Cadman Moody",
+		"numero": "862999",
+		"score": "70.4",
+		"region": 1
+	},
+	{
+		"nom": "Xyla Navarro",
+		"numero": "466499",
+		"score": "87.6",
+		"region": 1
+	},
+	{
+		"nom": "Buckminster Mcguire",
+		"numero": "909399",
+		"score": "82.4",
+		"region": 5
+	},
+	{
+		"nom": "Cora Mcbride",
+		"numero": "216099",
+		"score": "81.4",
+		"region": 5
+	},
+	{
+		"nom": "Odessa Wyatt",
+		"numero": "203799",
+		"score": "72.8",
+		"region": 1
+	},
+	{
+		"nom": "Melodie Watkins",
+		"numero": "1360599",
+		"score": "79.7",
+		"region": 3
+	},
+	{
+		"nom": "Murphy Lynch",
+		"numero": "2361699",
+		"score": "76.1",
+		"region": 1
+	},
+	{
+		"nom": "Allegra Griffin",
+		"numero": "1443799",
+		"score": "78",
+		"region": 1
+	},
+	{
+		"nom": "Venus Webb",
+		"numero": "449299",
+		"score": "84.1",
+		"region": 2
+	},
+	{
+		"nom": "Micah York",
+		"numero": "642099",
+		"score": "75",
+		"region": 3
+	},
+	{
+		"nom": "Joseph Roth",
+		"numero": "923899",
+		"score": "87.9",
+		"region": 4
+	},
+	{
+		"nom": "Lucas Wyatt",
+		"numero": "495599",
+		"score": "77.1",
+		"region": 3
+	},
+	{
+		"nom": "Dahlia Whitaker",
+		"numero": "168599",
+		"score": "70.2",
+		"region": 3
+	},
+	{
+		"nom": "Joel Bonner",
+		"numero": "121499",
+		"score": "77.9",
+		"region": 2
+	},
+	{
+		"nom": "Bree Fisher",
+		"numero": "474099",
+		"score": "79.8",
+		"region": 1
+	},
+	{
+		"nom": "Oren Cotton",
+		"numero": "00099",
+		"score": "81.9",
+		"region": 2
+	},
+	{
+		"nom": "Madison Griffin",
+		"numero": "136399",
+		"score": "82",
+		"region": 3
+	},
+	{
+		"nom": "Althea Bullock",
+		"numero": "1657499",
+		"score": "83.2",
+		"region": 5
+	},
+	{
+		"nom": "Colin Cunningham",
+		"numero": "144599",
+		"score": "68.8",
+		"region": 5
+	},
+	{
+		"nom": "Vernon Stanley",
+		"numero": "164099",
+		"score": "78.6",
+		"region": 1
+	},
+	{
+		"nom": "Summer Irwin",
+		"numero": "163009",
+		"score": "72.4",
+		"region": 4
+	},
+	{
+		"nom": "Nadine Robles",
+		"numero": "1696599",
+		"score": "75.8",
+		"region": 5
+	},
+	{
+		"nom": "Beatrice Ewing",
+		"numero": "1756699",
+		"score": "90.9",
+		"region": 2
+	},
+	{
+		"nom": "Gil Wiggins",
+		"numero": "166299",
+		"score": "80.4",
+		"region": 1
+	},
+	{
+		"nom": "Callum Vincent",
+		"numero": "160299",
+		"score": "78.8",
+		"region": 4
+	}
+]
