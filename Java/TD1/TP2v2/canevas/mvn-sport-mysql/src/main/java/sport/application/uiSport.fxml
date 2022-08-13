@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.application.Controller">
+   <children>
+      <Button layoutX="286.0" layoutY="23.0" mnemonicParsing="false" onAction="#OnSetCapa" prefHeight="39.0" text="set Capa" />
+      <ListView fx:id="listview" layoutX="21.0" layoutY="122.0" prefHeight="250.0" prefWidth="360.0" />
+      <TextField fx:id="textFieldCapa" layoutX="21.0" layoutY="23.0" prefHeight="39.0" prefWidth="249.0" />
+      <Button layoutX="220.0" layoutY="75.0" mnemonicParsing="false" onAction="#OnGetBySport" prefHeight="39.0" text="getBySport" />
+      <TextField fx:id="textFieldSport" layoutX="21.0" layoutY="75.0" prefHeight="39.0" prefWidth="187.0" />
+   </children>
+</Pane>
