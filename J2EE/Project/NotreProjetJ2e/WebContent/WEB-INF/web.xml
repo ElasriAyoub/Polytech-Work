@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servlet>
+<servlet-name>Jersey Web app</servlet-name>
+<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+<init-param>
+<param-name>jersey.config.server.provider.packages</param-name>
+<param-value>Entities</param-value>
+</init-param>
+<init-param>
+<param-name>jersey.config.server.provider.scanning.recursive</param-name>
+<param-value>true</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+<servlet-name>Jersey Web app</servlet-name>
+<url-pattern>/api/*</url-pattern>
+</servlet-mapping>
+</web-app>
