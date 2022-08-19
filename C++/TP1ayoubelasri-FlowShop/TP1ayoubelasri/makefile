@@ -25,4 +25,3 @@ Cmax: CmaxFlowShop.o parser.o Job3M.o Rmax.o Sequence.o
 clean:
 	del *.o
 	del *.exe 
-	
