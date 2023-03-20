@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Registration Form</title>
+  <meta name="viewport" content="width=device-width,
+      initial-scale=1.0" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Profile</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullName">Name *</label>
+          <input type="text" id="fullName" name="fullName" [(ngModel)]="name" placeholder="Enter Name" />
+        </div>
+        <div class="user-input-box">
+          <label for="username">Surname *</label>
+          <input type="text" id="username" name="username" [(ngModel)]="lastname" placeholder="Enter Surname" />
+        </div>
+        <div class="user-input-box">
+          <label for="date">Date of Birth *</label>
+          <input style="color:grey;" type="text" id="date" name="date" [(ngModel)]="date"
+            placeholder="Enter date of birth" type="date" />
+        </div>
+        <div class="user-input-box">
+          <label for="profession">Profession *</label>
+          <input type="text" id="profession" name="profession" [(ngModel)]="profession" placeholder="Enter profession"
+            type="text" />
+        </div>
+        <div class="user-input-box">
+          <label for="bio">Bio *</label>
+          <input type="text" id="bio" name="bio" [(ngModel)]="bio" placeholder="Write your bio" type="text" />
+        </div>
+        <div class="gender-details-box" style="position: absolute;
+        top: 280px;
+        left: 340px;">
+          <span class="gender-title" style="width: 95%;
+          color: grey;
+          font-size: 20px;
+          font-weight: 400;
+          margin: 5px 0;">Gender *</span>
+          <div class="gender-category">
+  
+            <input type="radio" name="gender" id="male" value="male" (change)="radioChangeHandler($event)">
+            <label style="color:grey;" for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" (change)="radioChangeHandler($event)">
+            <label style="color:grey;" for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other" (change)="radioChangeHandler($event)">
+            <label style="color:grey;" for="other">Other</label>
+          </div>
+        </div>
+        
+      </div>
+
+      <div>
+        <div style="height:100px" class="user-input-box">
+          <img [src]="url" style="width:100px; height:100px; object-fit: cover; border-radius: 50%;">
+
+        </div>
+        <div class="main-user-info">
+          <div class="user-input-box" class="image-upload">
+
+            <label for="file-input" style="position: absolute;
+            left: 150px;
+            top: 420px;">
+              <i class="fas fa-camera" style="font-size:30px;color:grey;"></i>
+              <label for="fullName" style="color: grey;margin-left: 20px;">
+                <p *ngIf=!imageOk>Upload your Dog's profile picture *</p>
+                <p *ngIf=imageOk>Image uploaded.</p>
+              </label>
+            </label>
+            <input id="file-input" type="file" (change)="onselectFile($event)" class="fas fa-camera" />
+          </div>
+        </div>
+      </div>
+
+      
+      <!--<div class="user-input-box">
+        <img [src]="url" style="width:100px; height:100px; object-fit: cover; border-radius: 50%;">
+      </div>
+      <div class="main-user-info" style="display: inline-block; position: absolute; left: 319px; top: 295px;">
+        <div class="user-input-box" class="image-upload" style="margin-left: 20px;">
+          <label for="file-input">
+            <i class="fas fa-camera" style="font-size:40px;color:grey;"></i>
+            <label for="fullName">
+              <p *ngIf=imageOk style="margin-left: 10px;color: grey;"> Image uploaded.</p>
+              <p *ngIf=!imageOk style="margin-left: 10px;color: grey;">Upload your profile picture *</p>
+            </label>
+          </label>
+          <input id="file-input" type="file" (change)="onselectFile($event)" class="fas fa-camera" />
+        </div>
+      </div>-->
+      <div class="form-submit-btn">
+        <input type="submit" value="Save" (click)="createProfile()">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

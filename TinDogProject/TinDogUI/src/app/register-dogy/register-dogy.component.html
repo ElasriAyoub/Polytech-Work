@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Registration Form</title>
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Dog Profile</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullName">Name *</label>
+          <input type="text" id="fullName" name="fullName" [(ngModel)]="fullname" placeholder="Enter Full Name" />
+        </div>
+        <div class="user-input-box">
+          <label for="date">Date of Birth *</label>
+          <input style="color:grey;" id="date" name="date" [(ngModel)]="date" placeholder="Enter date of birth"
+            type="date" />
+        </div>
+        <div class="user-input-box">
+          <label for="bio">Short Description *</label>
+          <input type="text" id="bio" name="bio" placeholder="How would you describe your dog?" [(ngModel)]="bio" />
+        </div>
+
+        <div class="gender-details-box" style="position: absolute;top: 185px;left: 340px;">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+
+            <input type="radio" name="gender" id="male" value="male" (change)="radioChangeHandler($event)">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" (change)="radioChangeHandler($event)">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other" (change)="radioChangeHandler($event)">
+            <label for="other">Other</label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="user-input-box">
+          <img [src]="url" style="width:100px; height:100px; object-fit: cover; border-radius: 50%;">
+
+        </div>
+        <div class="main-user-info">
+          <div class="user-input-box" class="image-upload">
+
+            <label for="file-input" style="position: absolute;
+            left: 150px;
+            top: 315px;">
+              <i class="fas fa-camera" style="font-size:30px;color:grey;"></i>
+              <label for="fullName" style="color: grey;margin-left: 20px;">
+                <p *ngIf=!imageOk>Upload your Dog's profile picture *</p>
+                <p *ngIf=imageOk>Image uploaded.</p>
+              </label>
+            </label>
+            <input id="file-input" type="file" (change)="onselectFile($event)" class="fas fa-camera" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-submit-btn">
+        <input type="submit" value="Register" (click)="createProfile()">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

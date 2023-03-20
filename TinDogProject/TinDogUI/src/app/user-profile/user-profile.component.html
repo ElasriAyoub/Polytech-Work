@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="card">
+    <div style="text-align: center; margin: 20px; color: white;">
+      <h3>Profile</h3>
+    </div>
+    <div>
+      <div *ngIf=imageCollected style="display: inline-block;">
+        <img src={{profileImage}} alt="Profile Image"
+        style="width:200px; height:200px; object-fit: cover; border-radius: 50%; display: inline-flex; border: 2px solid white; margin: 10px;"><br>
+      </div>
+      <div *ngIf=profileCollected style="display: inline-block; vertical-align: middle; color: white">
+        <h4 style="padding-top: 5px; margin-bottom: 5px;">{{owner.name}} {{owner.lastname}} </h4>
+        <h6 style=" margin-bottom: 5px;">{{owner.profession}}</h6>
+        <h6 style="    margin-bottom: 5px;">{{owner.birthday| date:'dd-MM-yyyy'}}</h6>
+        <div style="width: 400px; font-style: italic;">
+          <h6 >{{owner.bio}}</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main_box" style="margin-bottom: 43%;">
+    <input type="checkbox" id="check">
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#"><u>Menu</u></a>
+      </div>
+      <div class="btn_two">
+        <label for="check">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+      <div class="menu">
+        <ul style="list-style: none;">
+          <li><i class="fa fa-edit"></i>
+            <a href="createProfile">Edit Profile</a>
+          </li>
+          <li>
+            <i class="fa fa-plus"></i>
+            <a href="createProfileDog">Edit Pet Profile</a>
+          </li>
+          <li>
+            <i class="fas fa-dog"></i>
+            <a href="javascript:" (click)="sendData()">Pet Profile</a>
+          </li>
+          <li>
+            <i class="fas fa-heart"></i>
+            <a href="matches">Your Matches</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

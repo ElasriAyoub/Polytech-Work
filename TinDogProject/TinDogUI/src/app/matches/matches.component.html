@@ -1,0 +1,59 @@
+<head></head>
+
+<body>
+
+    <div>
+        <div id="zone" style="padding-left: 20px;">
+            <div class="sidebar_menu">
+                <div class="logo">
+                    <a><u>Matches</u></a>
+                </div>
+                <div *ngIf=matchesRetrieved class="menu" style="overflow: scroll;">
+                    <ul *ngFor="let dog of matches" style="list-style: none;">
+                        <li (click)="save(dog)">{{dog.dogname}}</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div *ngIf="matchesRetrieved && conversationOpen && imageRetrieved" class="chat-global"
+                style="height: 600px; position: absolute; top: 12%; left: 35%; ">
+
+                <div class="nav-top">
+
+                    <div class="utilisateur">
+                        <img src={{image}} style="width:70px; height:70px; object-fit: cover;border-radius: 100%; margin-left: 20px;
+                        margin-right: 20px;">
+                        <a href="javascript:" (click)="sendData(currentDog)" style="color:black; font-size: large;">{{currentDog.dogname}}</a>
+                    </div>
+
+
+                </div>
+                <ng-container *ngIf=conversationRetrieved class="conversation" class="box1">
+                    <div style="overflow:scroll; overflow-anchor:revert" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                        <div *ngFor="let conv of conversation">
+                            <div [ngClass]="conv.sentByCurrentUser == false ? 'talk left' : 'talk right'">
+                                <p>{{conv.messageBody}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+                <form class="chat-form">
+                    <div class="container-inputs-stuffs">
+                        <div class="files-logo-cont"></div>
+                        <div class="group-inp">
+                            <textarea [(ngModel)]="message" type="textarea" id="mesg" name="mesg"
+                                placeholder="Enter your message" cols="29" style="border: 20px"></textarea>
+                        </div>
+                        <button class="submit-msg-btn" (click)=send()>
+                            <img src="assets/img/send.svg">
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>

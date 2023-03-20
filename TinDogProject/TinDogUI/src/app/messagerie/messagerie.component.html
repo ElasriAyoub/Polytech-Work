@@ -1,0 +1,39 @@
+<div class="flex-container ">
+  <div id="zone-swipe">
+    <div>
+      <div>
+        <!--<img src="assets\img\puppy_1.jpg" alt="Nature" class="center" />-->
+
+        <div >
+          <div *ngIf=noMoreDogsToShow>
+            <p style="font-size: 30px; color: gray;">No more dogs to show! Come back later :)</p></div>
+          <div *ngIf=dogsCollected class="card" style="width: 500px;text-align: center; max-height: calc(100vh - 100px);;">
+            <img *ngIf=imageCollected src={{dogImage}} style="width:300px; height:300px; object-fit: cover; margin-top: 20px; border-radius: 50%; margin-left: 20%;">
+            <div>
+              <h1 style="font-size:xx-large; color: rgb(237 103 111 / 80%); margin-top: 10px;">{{currentDog.dogname}}</h1>
+              <h3 style="font-size: medium; color: rgb(237 103 111 / 80%)">{{currentDog.birthday| date:'dd-MM-yyyy'}}</h3>
+              <h3 style="font-size:medium; font-style: italic; color: rgb(237 103 111 / 80%); margin-top: 10px;">{{currentDog.bio}} </h3>
+            </div>
+            <div class="div1">
+              <div class="btn-group">
+                <button (click)="swipeYES()">
+                  <i class="fa fa-check-circle" style="font-size:60px;color:rgb(23, 192, 7); margin: 40px;"></i>
+                </button>
+
+                <button (click)="swipeNO()">
+                  <i class="fa fa-times-circle" style="font-size:60px;color:red; margin: 40px;"></i>
+                </button>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+      <div></div>
+
+    </div>
+  </div>

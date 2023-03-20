@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login-PurrfectMatch</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+  integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/animals-7/24/Cat-512.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <!--<a class="navbar-brand" href="#"><i class="fas fa-dog"></i>TinDog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+      <img style="width: 100px; height: auto;"src="assets/img/Tindog-Logo-Horizontal.png" alt="Tindog logo">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li *ngIf="id" class="nav-item" style="margin-left: 200px;">
+            <!--   <a class="nav-link" href="home/">Home  <span class="sr-only"></span></a>-->
+            <a class="nav-link" href="messagerie/"> <i class="fa fa-home"
+                style="font-size:25px; align-content: center;"></i></a>
+          </li>
+
+          <li *ngIf="id" class="nav-item" style="margin-left: 200px;">
+            <a class="nav-link" href="userProfile/"> <i class="fa fa-user"
+                style="font-size:25px; align-content: center;"></i></a>
+            <!--      <a class="nav-link" href="home/">About</a>-->
+          </li>
+
+          <li *ngIf="id" class="nav-item" style="margin-left: 200px;">
+            <a class="nav-link" href="matches/"> <i class="fa fa-heart" 
+              style="font-size:20px; align-content: center;"></i></a>
+            <!--      <a class="nav-link" href="home/">About</a>-->
+          </li>
+
+          <li *ngIf="id" class="nav-item" style="right:100px; position:absolute">
+            <a class="nav-link" href="javascript:" (click)="logout();">Log Out</a>
+          </li>
+
+          <!--<li *ngIf="!id" class="nav-item " style="text-align: right;">
+            <a class="nav-link active" href="login"><i class="fas fa-user" 
+              style="font-size:25px; align-content: center;"></i> Login</a>
+          </li>-->
+
+          <!-- <li  *ngIf="id" class="nav-item">
+                      <a routerLink="profile/" class="nav-link" routerLinkActive="active" >Profile</a>
+                  </li>
+                    <li  *ngIf="id" class="nav-item">
+                        <a class="nav-link" href="messagerie/">Swipe</a>
+                    </li>
+                    <li *ngIf="id" class="nav-item">
+                      <a class="nav-link" href="userProfile/">Your Profile</a>
+                  </li>
+                  <li  *ngIf="id" class="nav-item">
+                    <a class="nav-link" href="createProfile/">Create Profile</a>
+                </li>
+                <li  *ngIf="id" class="nav-item">
+                  <a class="nav-link" href="createProfileDog/">Create Dog Profile</a>
+              </li>-->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>

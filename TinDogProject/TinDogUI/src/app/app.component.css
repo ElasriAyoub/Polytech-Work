@@ -1,0 +1,8 @@
+.custom-button-style{
+    border: 0.5px solid gray;
+    border-radius: 10px;
+}
+
+.custom-button-style:hover{
+    background-color: pink;
+}

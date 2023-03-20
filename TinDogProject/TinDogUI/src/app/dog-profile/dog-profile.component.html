@@ -1,0 +1,46 @@
+<html>
+
+<body>
+
+
+
+  <div>
+    <div *ngIf="ownerRetrieved" style="display: inline-block;" class="owner-card">
+      <div style="text-align: center; margin: 20px; color: grey;">
+        <h3>Owner</h3>
+      </div>
+      <div style="margin: 10px;">
+        <img src={{image}}
+          style="width:200px; height:200px; object-fit: cover; border-radius: 50%; display: inline-flex; border: 2px solid rgba(237,103,111,255); margin: 10px;">
+        <div style="display: inline-block; vertical-align: middle; color: grey;">
+          <h4 style="padding-top: 5px; font-style: bold;">{{owner.name}} {{owner.lastname}} </h4>
+          <h6>{{owner.profession}}</h6>
+          <h6>{{owner.birthday| date:'dd-MM-yyyy'}}</h6>
+          <div style="width: 400px; font-style: italic;">
+            <h6>{{owner.bio}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="dogRetrieved" style="display: inline-block;" class="dog-card">
+      <div style="text-align: center; margin: 20px; color: white;">
+        <h3>Dog</h3>
+      </div>
+      <div style="margin: 10px;">
+        <img src={{dogImage}}
+          style="width:200px; height:200px; object-fit: cover; border-radius: 50%; display: inline-flex; border: 2px solid white; margin: 10px;">
+        <div style="display: inline-block; vertical-align: middle; color: white;">
+          <h4 style="padding-top: 5px;">{{dog.dogname}} </h4>
+          <h6>{{dog.birthday| date:'dd-MM-yyyy'}}</h6>
+          <div style="width: 400px; font-style: italic;">
+            <h6>{{dog.bio}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
